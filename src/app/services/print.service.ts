@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class PrintService {
   constructor() {}
 
-  print(message: string) {
+  print(message: any) {
     let div = document.createElement('div');
     div.innerHTML = '<p>' + message + '</p>';
     document.body.appendChild(div);
